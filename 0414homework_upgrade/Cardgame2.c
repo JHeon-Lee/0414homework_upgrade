@@ -89,7 +89,7 @@ void InitTable3(int* table)
 			table[i][j] = rand() % 13 + 1;
 			for (int k = 0; k < j; k++)
 			{
-				if (table[i][j] == table[i][k])
+				if (table[i][j] == table[i][k]) // 오류 발생
 				{
 					j--;
 					break;
